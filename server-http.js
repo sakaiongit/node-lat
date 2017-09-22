@@ -7,7 +7,7 @@ http.createServer(function(request, response){
 	//Send HTTP header
 	//HTTP status : 200 : OK
 	//Content Type : text/plain
-	response.writeHeader(200, {'content-type':'text/plain'});
+	response.writeHead(200, {'content-type':'text/plain'});
 
 	// Send response body as "Hello World"
 	response.end("Hello World\n")
